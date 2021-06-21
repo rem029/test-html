@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/scrollToTop.css" />
+
+    <title>Manipulating DOM</title>
+  </head>
+  <body>
+    <script src="components/header.js"></script>
+
+    <div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { includedLanguages: "en,ar" },
+          "google_translate_element"
+        );
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+
+    <a href="page1.html">GO TO PAGE 1</a>
+
+    <div id="section__1" class="sections">
+      <h2>SECTION 1</h2>
+      <h3>SUB SECTION</h3>
+    </div>
+    <div id="section__2" class="sections">
+      <h2>SECTION 2</h2>
+      <h3>SUB SECTION</h3>
+    </div>
+    <div id="section__3" class="sections">
+      <h2>SECTION 3</h2>
+      <h3>SUB SECTION</h3>
+    </div>
+
+    <script src="components/scrollToTop.js"></script>
+  </body>
+</html>
