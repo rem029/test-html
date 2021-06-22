@@ -27,12 +27,12 @@ header {
   text-align: center;
 }
 
-.container-social-icons {
+.container-app-icons {
   justify-content: center !important;
 }
 
-.container-social-icons > img {
-  width: 38px;
+.container-app-icons > img {
+  width: 25%;
   height: auto;
   margin: 0 10px;
 }
@@ -47,4 +47,19 @@ header {
   border-radius: 50%;
   width: 10px;
   height: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .container-app-icons > img {
+    margin: 0 2px;
+  }
+
+  .container__left > p {
+    font-size: 9px !important;
+  }
+
+  header {
+    padding: 5px;
+
+  }
 }
