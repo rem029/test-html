@@ -1,106 +1,50 @@
 header {
-  width: 100%;
-  height: 50px;
-  position: relative;
-  padding: 15px 20px;
-  box-sizing: border-box;
-  background-color: gainsboro;
-
-  overflow: hidden;
-}
-
-header > button {
   position: absolute;
-  left: 10px;
-}
-
-header > nav {
-  position: fixed;
-  left: 0;
   top: 0;
-  margin: 0;
-  padding: 0;
-  width: 50%;
-  height: 100vh;
-  background-color: grey;
-  z-index: 100;
-
-  transform: translateX(-1000%);
-  transition: all 0.5s ease;
-}
-
-.nav__show {
-  display: block;
-  transform: translateX(0);
-}
-
-header > nav > ul {
-  margin-top: 50px 0;
-  padding: 0;
-}
-
-header > nav > ul > li {
-  list-style: none;
-  display: block;
-  margin: 10px 30px;
-}
-
-header > nav > ul > li > a {
-  outline: none;
-  text-decoration: none;
-  color: black;
-}
-
-.header__backdrop {
-  position: fixed;
   left: 0;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  display: none;
-  opacity: 0;
+
   width: 100%;
-  height: 100%;
-  background-color: black;
-  z-index: 90;
-  transition: opacity 0.5s ease;
+  height: fit-content;
+  justify-content: space-between !important;
+
+  padding: 25px;
+  box-sizing: border-box;
 }
 
-.header__backdrop_show {
-  display: block;
-  opacity: 0.5;
+.container__left {
+  width: 25%;
 }
 
-@media screen and (min-width: 720px) {
-  header > nav {
-    position: absolute;
-    right: -20%;
-    top: -20%;
+.container__mid {
+  width: 50%;
+}
 
-    margin: 0;
-    padding: 0;
+.container__right {
+  width: 25%;
+}
 
-    width: 90%;
+.container__left > p {
+  text-align: center;
+}
 
-    background-color: transparent;
-    transform: translateX(0);
-  }
+.container-social-icons {
+  justify-content: center !important;
+}
 
-  .nav__show {
-    display: block;
-    transform: translateX(0);
-  }
+.container-social-icons > img {
+  width: 38px;
+  height: auto;
+  margin: 0 10px;
+}
 
-  header > nav > ul > li {
-    list-style: none;
-    display: inline-block;
-  }
+.container__right > img {
+  width: 100%;
+  height: auto;
+}
 
-  header > button {
-    display: none;
-  }
-
-  .header__backdrop {
-    display: none;
-  }
+.dot-shape {
+  border: 2px solid #aa9e70;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
 }

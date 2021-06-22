@@ -4,46 +4,132 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/scrollToTop.css" />
-
-    <title>Manipulating DOM</title>
+    <title>CBQ Newsletter</title>
   </head>
   <body>
-    <script src="components/header.js"></script>
+    <header class="flex flex-center flex-row">
+      <div class="container__left flex flex-column">
+        <p class="text-xsmall text-gold">Download our CBQ Mobile App</p>
 
-    <div id="google_translate_element"></div>
+        <div class="container-social-icons flex flex-row">
+          <img src="images/icon-phone.png" alt="icon-phone" />
+          <img src="images/icon-playstore.png" alt="icon-playstore" />
+          <img src="images/icon-huawei.png" alt="icon-huawei" />
+        </div>
+      </div>
 
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-          { includedLanguages: "en,ar" },
-          "google_translate_element"
-        );
-      }
-    </script>
+      <div class="container__mid flex flex-center">
+        <div class="dot-shape"></div>
+      </div>
 
-    <script
-      type="text/javascript"
-      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    ></script>
+      <div class="container__right">
+        <img src="images/icon-cbq.png" alt="icon-cbq" />
+      </div>
+    </header>
 
-    <a href="page1.html">GO TO PAGE 1</a>
+    <div class="section container-relative flex flex-center">
+      <img
+        class="img-responsive img-top"
+        src="images/image-top.png"
+        alt="bg-image-cbq"
+      />
 
-    <div id="section__1" class="sections">
-      <h2>SECTION 1</h2>
-      <h3>SUB SECTION</h3>
+      <div class="container-absolute flex flex-center flex-column">
+        <h1 class="text-cursive">Know your reward</h1>
+      </div>
+
+      <div
+        class="container-absolute absolute-bottom flex flex-center flex-column"
+        style="padding: 20px; box-sizing: border-box; width: 100%"
+      >
+        <h2 class="text-white">Dear Mr.Khalil</h2>
+        <p class="text-gold text-semibold">
+          We hope you are enjoying our Rewards Programme
+        </p>
+      </div>
     </div>
-    <div id="section__2" class="sections">
-      <h2>SECTION 2</h2>
-      <h3>SUB SECTION</h3>
-    </div>
-    <div id="section__3" class="sections">
-      <h2>SECTION 3</h2>
-      <h3>SUB SECTION</h3>
+
+    <div class="section flex flex-center flex-column">
+      <p class="text-gold text-small">Your current points balance is:</p>
+      <h1 class="text-gold">15,850<span>Points</span></h1>
+      <p class="text-gold text-small">
+        Points values are as of 29th October 2020
+      </p>
+
+      <hr />
+
+      <h2 class="text-gold">Offer of the Month</h2>
+
+      <div class="container-sponsors flex flex-center flex-row-wrap">
+        <img src="images/logo-abercrombie-lg.png" alt="logo-abercrombie-lg" />
+        <img src="images/logo-macy.png" alt="logo-macy" />
+        <img src="images/logo-lakefifth.png" alt="logo-lakefifth.png" />
+        <img src="images/logo-bloomingdales.png" alt="logo-bloomingdales.png" />
+      </div>
     </div>
 
-    <script src="components/scrollToTop.js"></script>
+    <div class="space-100px"></div>
+
+    <div class="section container-relative flex flex-center">
+      <img
+        class="img-responsive img-mid"
+        src="images/image-mid.png"
+        alt="bg-image-cbq"
+      />
+
+      <div
+        class="
+          container-absolute
+          absolute-top
+          flex flex-column
+          container-padding
+        "
+      >
+        <h2 class="text-gold" style="text-align: center">
+          Let the world come to you
+        </h2>
+
+        <div class="space-100px"></div>
+
+        <p class="text-gold">
+          Shop at your favourite destinations from the comfort of your home with
+          the Limited Edition Black Mastercard® World Elite card.
+        </p>
+
+        <div class="space-50px"></div>
+
+        <p class="text-gold text-semibold" style="margin: 10px 0">
+          Dear Limited Edition Member,
+        </p>
+        <p class="text-gold text-semibold" style="margin: 10px 0">
+          As we strive to further enhance your banking experience with
+          Commercial Bank, we bring you today premium offers at the best online
+          retailers.
+        </p>
+        <p class="text-gold text-semibold" style="margin: 10px 0">
+          Use your Limited Edition Black Mastercard® World Elite card at
+          participating retailers and automatically get cash back on offers from
+          renowned global online retailers abroad.
+        </p>
+      </div>
+    </div>
+
+    <div class="section flex flex-center flex-column">
+      <div class="container-sponsors-with-text flex flex-center flex-row-wrap">
+        <img src="images/logo-abercrombie-lg.png" alt="logo-abercrombie-lg" />
+        <img src="images/logo-macy.png" alt="logo-macy" />
+        <img src="images/logo-lakefifth.png" alt="logo-lakefifth.png" />
+        <img src="images/logo-bloomingdales.png" alt="logo-bloomingdales.png" />
+      </div>
+    </div>
   </body>
 </html>
